@@ -5,8 +5,14 @@ import Header from "../components/Header";
 import SmallCard from "../components/SmallCard";
 import LargeCard from "../components/LargeCard";
 import Footer from "../components/Footer";
+import ReactGA from "react-ga";
+import React, { useState } from "react"; // <--- import the hook
 
 export default function Home({ exploreData, cardsData }) {
+  useEffect(() => {
+    ReactGA.initialize("UA-227757407-2");
+    ReactGA.pageview("/");
+  }, []);
   return (
     <div className="">
       <Head>
