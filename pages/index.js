@@ -11,7 +11,7 @@ import React, { useEffect } from "react"; // <--- import the hook
 export default function Home({ exploreData, cardsData }) {
   useEffect(() => {
     ReactGA.initialize("UA-227757407-2");
-    ReactGA.pageview("/");
+    ReactGA.pageview("https://airbnb-clone-gamma-blush.vercel.app/");
   }, []);
   return (
     <div className="">
