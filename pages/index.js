@@ -6,7 +6,7 @@ import SmallCard from "../components/SmallCard";
 import LargeCard from "../components/LargeCard";
 import Footer from "../components/Footer";
 import ReactGA from "react-ga";
-import React, { useState } from "react"; // <--- import the hook
+import React, { useEffect } from "react"; // <--- import the hook
 
 export default function Home({ exploreData, cardsData }) {
   useEffect(() => {
